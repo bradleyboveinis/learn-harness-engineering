@@ -25,11 +25,12 @@ To use it with Claude Code, copy the `harness-creator/` directory into your proj
 
 ### Reference Patterns
 
-The skill includes 6 deep-dive reference documents:
+The skill includes 7 focused reference documents:
 
 | Pattern | When to Use |
 |---------|-------------|
 | Memory Persistence | Agent forgets between sessions |
+| Skill Runtime | Package reusable workflows as skills |
 | Context Engineering | Context budget management, JIT loading |
 | Tool Registry | Tool safety, concurrency control |
 | Multi-Agent Coordination | Parallelism, specialization workflows |
@@ -45,6 +46,10 @@ The skill bundles ready-to-use templates:
 - `init.sh` — Standard initialization script
 - `progress.md` — Session progress log template
 - `session-handoff.md` — Session handoff template
+
+### Scripts
+
+The skill also includes plain Node.js scripts for scaffolding, validation, HTML assessment reports, and structural benchmark reports.
 
 ### How This Skill Was Built
 

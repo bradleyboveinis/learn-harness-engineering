@@ -25,11 +25,12 @@ npx skills add walkinglabs/learn-harness-engineering --skill harness-creator
 
 ### 参考模式
 
-技能包含 6 个深入的模式参考文档：
+技能包含 7 个聚焦的模式参考文档：
 
 | 模式 | 适用场景 |
 |------|----------|
 | 记忆持久化 | agent 在会话间遗忘项目知识 |
+| Skill Runtime | 将可复用 workflow 打包成技能 |
 | 上下文工程 | 上下文预算管理、按需加载、委托隔离 |
 | 工具注册 | 工具安全、并发控制、权限管道 |
 | 多智能体协调 | 并行化、专业化、研究员→实施者工作流 |
@@ -44,7 +45,11 @@ npx skills add walkinglabs/learn-harness-engineering --skill harness-creator
 - `feature-list.json` — JSON Schema + 功能列表示例
 - `init.sh` — 标准初始化脚本
 - `progress.md` — 会话进度日志模板
-- `session-handoff.md` — Session handoff template
+- `session-handoff.md` — 会话交接模板
+
+### 脚本
+
+技能也包含纯 Node.js 脚本，可用于脚手架生成、校验、HTML 评估报告与结构化 benchmark 报告。
 
 ### 开发过程
 

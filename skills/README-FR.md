@@ -21,10 +21,10 @@ Ce dossier contient des skills réutilisables pour agents IA dans le projet Lear
 
 Skill de harness engineering de niveau production pour agents de codage IA. Elle aide à créer, évaluer et améliorer les fichiers de harness d'agent, notamment AGENTS.md, les listes de fonctionnalités, les workflows de vérification et les mécanismes de continuité de session.
 
-- **5 modèles de référence** : Memory Persistence, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap
-- **Templates** : AGENTS.md, feature-list.json, init.sh, progress.md
-- **5 cas de test eval intégrés**
-- **Bilingue** : English + 中文
+- **7 modèles de référence** : Memory Persistence, Skill Runtime, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap, Gotchas
+- **Templates** : AGENTS.md/CLAUDE.md, feature-list.json, init.sh, progress.md, session-handoff.md
+- **Scripts** : scaffold, validation, rapport HTML et benchmark structurel
+- **10 cas de test eval intégrés**
 
 Voir la documentation complète : [harness-creator/README.md](harness-creator/README.md).
 
@@ -49,7 +49,8 @@ Les fichiers de ce dossier ont été audités :
 - Aucun backdoor, URL cachée ou payload encodé
 - Aucune exfiltration de données ni identifiants codés en dur
 - Aucune vulnérabilité de command injection
-- `init.sh` exécute uniquement des commandes npm lifecycle standard
+- Les scripts utilisent uniquement les modules intégrés de Node.js
+- Le `init.sh` généré exécute les commandes de vérification détectées du projet
 
 ## Licence
 

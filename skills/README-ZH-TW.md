@@ -21,10 +21,10 @@
 
 面向 AI 編程 agent 的生產級 harness engineering 技能。它協助建立、評估與改進 agent harness 檔案，例如 AGENTS.md、功能清單、驗證工作流與跨會話延續機制。
 
-- **5 個參考模式**：記憶持久化、上下文工程、工具註冊、多 agent 協調、生命週期與啟動
-- **範本**：AGENTS.md、feature-list.json、init.sh、progress.md
-- **5 個內建 eval 測試案例**
-- **雙語支援**：English + 中文
+- **7 個參考模式**：記憶持久化、技能執行期、上下文工程、工具註冊、多 agent 協調、生命週期與啟動、常見陷阱
+- **範本**：AGENTS.md/CLAUDE.md、feature-list.json、init.sh、progress.md、session-handoff.md
+- **腳本**：腳手架生成、校驗、HTML 評估報告、結構化 benchmark
+- **10 個內建 eval 測試案例**
 
 完整文件請見 [harness-creator/README.md](harness-creator/README.md)。
 
@@ -49,7 +49,8 @@
 - 無後門、隱藏 URL 或編碼 payload
 - 無資料外洩或硬編碼憑證
 - 無命令注入漏洞
-- `init.sh` 僅執行標準 npm lifecycle 命令
+- 腳本僅使用 Node.js 內建模組
+- 生成的 `init.sh` 會執行偵測到的專案驗證命令
 
 ## 授權
 

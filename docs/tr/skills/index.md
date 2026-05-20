@@ -25,11 +25,12 @@ Claude Code ile kullanmak için `harness-creator/` dizinini projenizin yetenek y
 
 ### Referans desenleri
 
-Yetenek, 6 adet derinlemesine referans belge içerir:
+Yetenek, 7 odaklı referans belge içerir:
 
 | Desen | Ne zaman kullanılır |
 |---------|-------------|
 | Bellek Kalıcılığı | Ajan oturumlar arasında unutuyor |
+| Skill Runtime | Yeniden kullanılabilir iş akışlarını skill olarak paketleme |
 | Bağlam Mühendisliği | Bağlam bütçesi yönetimi, JIT yükleme |
 | Araç Kayıt Defteri | Araç güvenliği, eşzamanlılık kontrolü |
 | Çoklu-Ajan Koordinasyonu | Paralellik, uzmanlaşma akışları |
@@ -44,7 +45,11 @@ Yetenek, doğrudan kullanılabilen şablonlar içerir:
 - `feature-list.json` — JSON Schema + örnek özellik listesi
 - `init.sh` — Standart başlatma betiği
 - `progress.md` — Oturum ilerleme günlüğü şablonu
-- `session-handoff.md` — Session handoff template
+- `session-handoff.md` — Oturum devir şablonu
+
+### Scriptler
+
+Yetenek ayrıca scaffold, doğrulama, HTML değerlendirme raporu ve yapısal benchmark raporu için saf Node.js scriptleri içerir.
 
 ### Bu yetenek nasıl geliştirildi
 

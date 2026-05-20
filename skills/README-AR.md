@@ -21,10 +21,10 @@
 
 Skill لإنتاج harness engineering بجودة إنتاجية لوكلاء البرمجة. تساعد على إنشاء وتقييم وتحسين ملفات harness الخاصة بالوكيل، مثل AGENTS.md وقوائم الميزات وسير عمل التحقق وآليات استمرار الجلسة.
 
-- **5 أنماط مرجعية**: Memory Persistence وContext Engineering وTool Registry وMulti-Agent Coordination وLifecycle & Bootstrap
-- **قوالب**: AGENTS.md وfeature-list.json وinit.sh وprogress.md
-- **5 حالات eval مدمجة**
-- **ثنائية اللغة**: English + 中文
+- **7 أنماط مرجعية**: Memory Persistence وSkill Runtime وContext Engineering وTool Registry وMulti-Agent Coordination وLifecycle & Bootstrap وGotchas
+- **قوالب**: AGENTS.md/CLAUDE.md وfeature-list.json وinit.sh وprogress.md وsession-handoff.md
+- **Scripts**: إنشاء scaffold، التحقق، تقرير HTML، وbenchmark بنيوي
+- **10 حالات eval مدمجة**
 
 راجع التوثيق الكامل في [harness-creator/README.md](harness-creator/README.md).
 
@@ -49,7 +49,8 @@ Skill لإنتاج harness engineering بجودة إنتاجية لوكلاء ا
 - لا توجد backdoors أو URL مخفية أو payloads مشفرة
 - لا يوجد تسريب بيانات أو بيانات اعتماد hardcoded
 - لا توجد ثغرات command injection
-- `init.sh` يشغل فقط أوامر npm lifecycle القياسية
+- تستخدم scripts وحدات Node.js المدمجة فقط
+- `init.sh` المولّد يشغل أوامر التحقق المكتشفة للمشروع
 
 ## الرخصة
 

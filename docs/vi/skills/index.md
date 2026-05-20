@@ -25,11 +25,12 @@ npx skills add walkinglabs/learn-harness-engineering --skill harness-creator
 
 ### Các Mẫu Tham Khảo (Reference Patterns)
 
-Kỹ năng này bao gồm 6 tài liệu tham khảo chuyên sâu:
+Kỹ năng này bao gồm 7 tài liệu tham khảo tập trung:
 
 | Mẫu (Pattern) | Khi nào sử dụng |
 |---------|-------------|
 | Lưu trữ bộ nhớ | Agent quên giữa các phiên |
+| Skill Runtime | Đóng gói workflow tái sử dụng thành skill |
 | Kỹ thuật ngữ cảnh | Quản lý ngân sách ngữ cảnh, nạp tức thời (JIT) |
 | Đăng ký công cụ | An toàn công cụ, kiểm soát đồng thời |
 | Điều phối Đa Agent | Xử lý song song, quy trình làm việc chuyên môn hóa |
@@ -44,7 +45,11 @@ Kỹ năng này đi kèm với các mẫu sẵn sàng sử dụng:
 - `feature-list.json` — JSON Schema + danh sách tính năng mẫu
 - `init.sh` — Kịch bản khởi tạo tiêu chuẩn
 - `progress.md` — Mẫu nhật ký tiến độ phiên làm việc
-- `session-handoff.md` — Session handoff template
+- `session-handoff.md` — Mẫu bàn giao phiên
+
+### Scripts
+
+Kỹ năng này cũng bao gồm các script Node.js thuần cho scaffold, xác thực, báo cáo đánh giá HTML và báo cáo benchmark cấu trúc.
 
 ### Kỹ năng này được Xây dựng như thế nào
 

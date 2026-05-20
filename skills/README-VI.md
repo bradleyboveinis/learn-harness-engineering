@@ -21,10 +21,10 @@ Thu muc nay chua cac AI agent skills co the tai su dung cho du an Learn Harness 
 
 Skill harness engineering cap production cho AI coding agents. Skill nay giup tao, danh gia va cai thien cac file harness cua agent, gom AGENTS.md, danh sach tinh nang, verification workflows va co che tiep noi phien lam viec.
 
-- **5 mau tham chieu**: Memory Persistence, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap
-- **Templates**: AGENTS.md, feature-list.json, init.sh, progress.md
-- **5 eval test case tich hop**
-- **Song ngu**: English + 中文
+- **7 mau tham chieu**: Memory Persistence, Skill Runtime, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap, Gotchas
+- **Templates**: AGENTS.md/CLAUDE.md, feature-list.json, init.sh, progress.md, session-handoff.md
+- **Scripts**: scaffold, validate, bao cao HTML, structural benchmark
+- **10 eval test case tich hop**
 
 Xem tai lieu day du tai [harness-creator/README.md](harness-creator/README.md).
 
@@ -49,7 +49,8 @@ Tat ca file trong thu muc nay da duoc kiem tra bao mat:
 - Khong co backdoor, URL an hoac payload duoc ma hoa
 - Khong ro ri du lieu hoac credential hardcoded
 - Khong co lo hong command injection
-- `init.sh` chi chay cac lenh npm lifecycle tieu chuan
+- Scripts chi dung module co san cua Node.js
+- `init.sh` duoc tao se chay cac lenh verification phat hien tu project
 
 ## Giay phep
 

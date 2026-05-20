@@ -25,11 +25,12 @@ npx skills add walkinglabs/learn-harness-engineering --skill harness-creator
 
 ### Референсные паттерны
 
-Скил включает 6 углублённых референсных документов:
+Скил включает 7 сфокусированных референсных документов:
 
 | Паттерн | Когда применять |
 |---------|-------------|
 | Memory Persistence | Агент забывает между сессиями |
+| Skill Runtime | Упаковка переиспользуемых workflow как skills |
 | Context Engineering | Управление бюджетом контекста, JIT-загрузка |
 | Tool Registry | Безопасность инструментов, контроль конкурентности |
 | Multi-Agent Coordination | Параллелизм, флоу со специализацией |
@@ -44,7 +45,11 @@ npx skills add walkinglabs/learn-harness-engineering --skill harness-creator
 - `feature-list.json` — JSON Schema + пример списка фич
 - `init.sh` — стандартный инициализационный скрипт
 - `progress.md` — шаблон лога прогресса сессии
-- `session-handoff.md` — Session handoff template
+- `session-handoff.md` — шаблон handoff сессии
+
+### Скрипты
+
+Скил также включает чистые Node.js-скрипты для scaffold, валидации, HTML-отчётов оценки и структурных benchmark-отчётов.
 
 ### Как был построен этот скил
 

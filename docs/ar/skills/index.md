@@ -25,11 +25,12 @@ npx skills add walkinglabs/learn-harness-engineering --skill harness-creator
 
 ### أنماط مرجعية
 
-تتضمن المهارة 6 وثائق مرجعية مفصلة:
+تتضمن المهارة 7 وثائق مرجعية مركزة:
 
 | النمط | متى تستخدمه |
 |---------|-------------|
 | Memory Persistence | عندما ينسى الوكيل بين الجلسات |
+| Skill Runtime | تغليف workflows قابلة لإعادة الاستخدام كمهارات |
 | Context Engineering | إدارة ميزانية السياق والتحميل عند الحاجة |
 | Tool Registry | أمان الأدوات والتحكم في التوازي |
 | Multi-Agent Coordination | التوازي و workflows التخصص |
@@ -44,7 +45,11 @@ npx skills add walkinglabs/learn-harness-engineering --skill harness-creator
 - `feature-list.json` — JSON Schema ومثال قائمة ميزات
 - `init.sh` — سكربت تهيئة قياسي
 - `progress.md` — قالب سجل تقدم الجلسة
-- `session-handoff.md` — Session handoff template
+- `session-handoff.md` — قالب تسليم الجلسة
+
+### Scripts
+
+تتضمن المهارة أيضا scripts نقية بـ Node.js لإنشاء scaffold والتحقق وتقارير HTML و benchmark بنيوي.
 
 ### كيف بُنيت هذه المهارة
 

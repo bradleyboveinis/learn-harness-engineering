@@ -21,10 +21,10 @@ Este directorio contiene skills reutilizables para agentes de IA en el proyecto 
 
 Skill de harness engineering de nivel producción para agentes de programación. Ayuda a crear, evaluar y mejorar archivos de harness para agentes, como AGENTS.md, listas de funciones, flujos de verificación y mecanismos de continuidad entre sesiones.
 
-- **5 patrones de referencia**: Memory Persistence, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap
-- **Plantillas**: AGENTS.md, feature-list.json, init.sh, progress.md
-- **5 casos de eval integrados**
-- **Bilingüe**: English + 中文
+- **7 patrones de referencia**: Memory Persistence, Skill Runtime, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap, Gotchas
+- **Plantillas**: AGENTS.md/CLAUDE.md, feature-list.json, init.sh, progress.md, session-handoff.md
+- **Scripts**: scaffold, validación, informe HTML y benchmark estructural
+- **10 casos de eval integrados**
 
 Consulta la documentación completa en [harness-creator/README.md](harness-creator/README.md).
 
@@ -49,7 +49,8 @@ Los archivos de este directorio fueron revisados:
 - Sin backdoors, URL ocultas ni payloads codificados
 - Sin exfiltración de datos ni credenciales hardcodeadas
 - Sin vulnerabilidades de command injection
-- `init.sh` solo ejecuta comandos estándar del ciclo de vida de npm
+- Los scripts usan solo módulos integrados de Node.js
+- El `init.sh` generado ejecuta los comandos de verificación detectados del proyecto
 
 ## Licencia
 

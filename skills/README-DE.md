@@ -21,10 +21,10 @@ Dieses Verzeichnis enthält wiederverwendbare AI agent skills für das Projekt L
 
 Production-orientierter Harness-Engineering-Skill für AI coding agents. Er hilft beim Erstellen, Bewerten und Verbessern von Agent-Harness-Dateien wie AGENTS.md, Feature-Listen, Verification Workflows und Mechanismen für Session Continuity.
 
-- **5 Referenzmuster**: Memory Persistence, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap
-- **Templates**: AGENTS.md, feature-list.json, init.sh, progress.md
-- **5 integrierte Eval-Testfälle**
-- **Zweisprachig**: English + 中文
+- **7 Referenzmuster**: Memory Persistence, Skill Runtime, Context Engineering, Tool Registry, Multi-Agent Coordination, Lifecycle & Bootstrap, Gotchas
+- **Templates**: AGENTS.md/CLAUDE.md, feature-list.json, init.sh, progress.md, session-handoff.md
+- **Scripts**: Scaffold, Validierung, HTML-Assessment und struktureller Benchmark
+- **10 integrierte Eval-Testfälle**
 
 Siehe [harness-creator/README.md](harness-creator/README.md) für die vollständige Dokumentation.
 
@@ -49,7 +49,8 @@ Alle Dateien in diesem Verzeichnis wurden geprüft:
 - Keine Backdoors, versteckten URLs oder codierten Payloads
 - Keine Datenexfiltration oder hardcodierten Zugangsdaten
 - Keine Command-Injection-Schwachstellen
-- `init.sh` führt nur Standardbefehle aus dem npm lifecycle aus
+- Scripts verwenden nur eingebaute Node.js-Module
+- Generiertes `init.sh` führt erkannte Projekt-Verifikationsbefehle aus
 
 ## Lizenz
 

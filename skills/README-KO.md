@@ -23,10 +23,10 @@
 
 AI 코딩 에이전트를 위한 프로덕션 하네스 엔지니어링 스킬입니다. 에이전트 하네스 파일(AGENTS.md, 기능 목록, 검증 워크플로우, 세션 연속성(session continuity) 메커니즘)을 생성하고 평가하며 개선하는 데 도움을 줍니다.
 
-- **5가지 참고 패턴**: 메모리 영속성(Memory Persistence), 컨텍스트 엔지니어링(Context Engineering), 도구 레지스트리(Tool Registry), 다중 에이전트 조율(Multi-Agent Coordination), 라이프사이클 및 부트스트랩(Lifecycle & Bootstrap)
-- **템플릿**: AGENTS.md, feature-list.json, init.sh, progress.md
-- **5개의 내장 평가(eval) 테스트 케이스**
-- **이중 언어**: 영어 + 中文
+- **7가지 참고 패턴**: 메모리 영속성(Memory Persistence), 스킬 런타임(Skill Runtime), 컨텍스트 엔지니어링(Context Engineering), 도구 레지스트리(Tool Registry), 다중 에이전트 조율(Multi-Agent Coordination), 라이프사이클 및 부트스트랩(Lifecycle & Bootstrap), Gotchas
+- **템플릿**: AGENTS.md/CLAUDE.md, feature-list.json, init.sh, progress.md, session-handoff.md
+- **스크립트**: scaffold, 검증, HTML 평가 리포트, 구조적 benchmark
+- **10개의 내장 평가(eval) 테스트 케이스**
 
 전체 문서는 [harness-creator/README.md](harness-creator/README.md)를 참조하십시오.
 
@@ -54,10 +54,12 @@ skills/
 ├── README-VI.md                 # 베트남어 버전
 ├── README-DE.md                 # 독일어 버전
 └── harness-creator/             # 하네스 엔지니어링 스킬
-    ├── SKILL.md                 # 주요 스킬 정의 (이중 언어)
+    ├── SKILL.md                 # 주요 스킬 정의
     ├── SKILL.md.en              # 영어 전용 버전
     ├── README.md                # 상세 문서
     ├── metadata.json            # 스킬 메타데이터 및 트리거
+    ├── agents/                  # 스킬 UI 메타데이터
+    ├── scripts/                 # 스캐폴드, 검증, benchmark 보조 스크립트
     ├── evals/                   # 테스트 케이스
     ├── templates/               # 스캐폴드(scaffold) 템플릿
     └── references/              # 심층 패턴 문서
@@ -82,7 +84,8 @@ skills/
 - 백도어, 숨겨진 URL, 인코딩된 페이로드 없음
 - 데이터 유출 또는 하드코딩된 자격 증명 없음
 - 명령 주입 취약점 없음
-- `init.sh`는 표준 npm 라이프사이클 명령만 실행
+- 스크립트는 Node.js 내장 모듈만 사용
+- 생성된 `init.sh`는 감지된 프로젝트 검증 명령을 실행
 
 ## 라이선스
 

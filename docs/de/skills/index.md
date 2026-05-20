@@ -25,11 +25,12 @@ Um ihn mit Claude Code zu verwenden, kopiere das Verzeichnis `harness-creator/` 
 
 ### Referenzmuster
 
-Der Skill enthält 6 ausführliche Referenzdokumente:
+Der Skill enthält 7 fokussierte Referenzdokumente:
 
 | Muster | Wann verwenden |
 |---------|----------------|
 | Memory Persistence | Der Agent vergisst zwischen Sessions |
+| Skill Runtime | Wiederverwendbare Workflows als Skills paketieren |
 | Context Engineering | Kontextbudget, JIT-Laden |
 | Tool Registry | Tool-Sicherheit, Nebenläufigkeitskontrolle |
 | Multi-Agent Coordination | Parallelität, Spezialisierungs-Workflows |
@@ -44,7 +45,11 @@ Der Skill enthält sofort nutzbare Vorlagen:
 - `feature-list.json` — JSON Schema und Beispiel-Feature-Liste
 - `init.sh` — Standard-Initialisierungsskript
 - `progress.md` — Vorlage für Session-Fortschrittslogs
-- `session-handoff.md` — Session handoff template
+- `session-handoff.md` — Session-Handoff-Vorlage
+
+### Scripts
+
+Der Skill enthält außerdem reine Node.js-Scripts für Scaffold, Validierung, HTML-Assessment-Berichte und strukturelle Benchmark-Berichte.
 
 ### Wie dieser Skill gebaut wurde
 

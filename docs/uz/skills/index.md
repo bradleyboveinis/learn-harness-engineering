@@ -25,11 +25,12 @@ Undan Claude Code bilan foydalanish uchun, `harness-creator/` jildini loyihangiz
 
 ### Maʼlumotnoma andozalari (Reference Patterns)
 
-Ushbu koʻnikma oʻz ichiga chuqur tahlil qilingan 6 ta maʼlumotnoma hujjatini (reference documents) oladi:
+Ushbu koʻnikma oʻz ichiga 7 ta yoʻnaltirilgan maʼlumotnoma hujjatini (reference documents) oladi:
 
 | Andoza (Pattern) | Qachon foydalanish kerak |
 |---------|-------------|
 | Xotirani saqlab qolish (Memory Persistence) | Agent sessiyalar oʻrtasida unutib qoʻysa |
+| Skill Runtime | Qayta ishlatiladigan workflowʼlarni skill sifatida paketlash |
 | Kontekst muhandisligi (Context Engineering) | Kontekst byudjetini boshqarish, kerak vaqtda (JIT) yuklash |
 | Vositalar reyestri (Tool Registry) | Vositalar xavfsizligi, parallellik nazorati (concurrency control) |
 | Koʻp agentli muvofiqlashtirish (Multi-Agent Coordination) | Parallellik, ixtisoslashish (specialization) jarayonlari |
@@ -44,7 +45,11 @@ Koʻnikma oʻz ichiga foydalanishga tayyor andozalarni oladi:
 - `feature-list.json` — JSON Schema + namunaviy funksiyalar roʻyxati (example feature list)
 - `init.sh` — Standart inisializatsiya skripti
 - `progress.md` — Sessiya jarayoni jurnali (progress log) andozasi
-- `session-handoff.md` — Session handoff template
+- `session-handoff.md` — Sessiyani topshirish andozasi
+
+### Skriptlar
+
+Koʻnikma scaffold, tekshirish, HTML baholash hisoboti va strukturaviy benchmark hisoboti uchun sof Node.js skriptlarini ham oʻz ichiga oladi.
 
 ### Ushbu koʻnikma qanday yaratilgan (How This Skill Was Built)
 
