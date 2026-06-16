@@ -5,6 +5,11 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 const docsBase = "/learn-harness-engineering/";
 const brandLogo = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23D95C41" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12.1" y1="11.9" x2="18.9" y2="8.2" /><line x1="12.1" y1="12.1" x2="20.3" y2="12.9" /><line x1="12.2" y1="12.4" x2="16.6" y2="19.1" /><line x1="11.8" y1="12.4" x2="7.3" y2="19.2" /><line x1="11.9" y1="12.1" x2="3.7" y2="13.3" /><line x1="11.8" y1="11.7" x2="7.8" y2="4.4" /></svg>';
 const githubRepoTreeLink = "https://github.com/walkinglabs/learn-harness-engineering/tree/main";
+const discordInviteLink = "https://discord.gg/XU7DQmpqk";
+const socialLinks = [
+  { icon: "github", link: githubRepoTreeLink },
+  { icon: "discord", link: discordInviteLink }
+] as const;
 
 const zhLectureItems = [
   { text: "欢迎", link: "/zh/" },
@@ -602,7 +607,7 @@ const createLocaleTheme = (
     darkModeSwitchLabel: labels.darkModeSwitch || "Theme",
     lightModeSwitchTitle: labels.lightModeSwitchTitle || "Switch to light theme",
     darkModeSwitchTitle: labels.darkModeSwitchTitle || "Switch to dark theme",
-    socialLinks: [{ icon: "github", link: githubRepoTreeLink }]
+    socialLinks
   };
 };
 
@@ -635,7 +640,7 @@ export default withMermaid(
       search: {
         provider: "local"
       },
-      socialLinks: [{ icon: "github", link: githubRepoTreeLink }]
+      socialLinks
     },
     markdown: {
       theme: {
@@ -678,7 +683,7 @@ export default withMermaid(
             '/en/skills/': [{ text: "Skills", items: enSkillItems }],
             '/en/': [{ text: "Lectures", items: enLectureItems }]
           },
-          socialLinks: [{ icon: "github", link: githubRepoTreeLink }]
+          socialLinks
         },
       },
       zh: {
@@ -731,7 +736,7 @@ export default withMermaid(
           darkModeSwitchLabel: "主题",
           lightModeSwitchTitle: "切换到浅色模式",
           darkModeSwitchTitle: "切换到深色模式",
-          socialLinks: [{ icon: "github", link: githubRepoTreeLink }],
+          socialLinks,
         },
       },
       "zh-TW": {
@@ -943,7 +948,7 @@ export default withMermaid(
           darkModeSwitchLabel: "Giao diện",
           lightModeSwitchTitle: "Chuyển sang chế độ sáng",
           darkModeSwitchTitle: "Chuyển sang chế độ tối",
-          socialLinks: [{ icon: "github", link: githubRepoTreeLink }],
+          socialLinks,
         },
       },
       ko: {
@@ -997,7 +1002,7 @@ export default withMermaid(
           darkModeSwitchLabel: "테마",
           lightModeSwitchTitle: "라이트 모드로 전환",
           darkModeSwitchTitle: "다크 모드로 전환",
-          socialLinks: [{ icon: "github", link: githubRepoTreeLink }],
+          socialLinks,
         },
       },
       uz: {
@@ -1057,7 +1062,7 @@ export default withMermaid(
           darkModeSwitchLabel: "Mavzu",
           lightModeSwitchTitle: "Yorugʻ rejimga oʻtish",
           darkModeSwitchTitle: "Qorongʻi rejimga oʻtish",
-          socialLinks: [{ icon: "github", link: githubRepoTreeLink }],
+          socialLinks,
         },
       },
       ru: {
@@ -1115,7 +1120,7 @@ export default withMermaid(
           darkModeSwitchLabel: "Тема",
           lightModeSwitchTitle: "Включить светлую тему",
           darkModeSwitchTitle: "Включить тёмную тему",
-          socialLinks: [{ icon: "github", link: githubRepoTreeLink }],
+          socialLinks,
         },
       },
       "pt-BR": {
@@ -1175,7 +1180,7 @@ export default withMermaid(
           darkModeSwitchLabel: "Tema",
           lightModeSwitchTitle: "Ativar tema claro",
           darkModeSwitchTitle: "Ativar tema escuro",
-          socialLinks: [{ icon: "github", link: githubRepoTreeLink }],
+          socialLinks,
         },
       },
     },
